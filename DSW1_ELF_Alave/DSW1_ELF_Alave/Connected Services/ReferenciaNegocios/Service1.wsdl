@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:53549/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:53549/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:53549/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService1" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_Clientes_InputMessage">
+    <wsdl:part name="parameters" element="tns:Clientes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Clientes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Paises_InputMessage">
+    <wsdl:part name="parameters" element="tns:Paises" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Paises_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PaisesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Pedidoscabexyear_InputMessage">
+    <wsdl:part name="parameters" element="tns:Pedidoscabexyear" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Pedidoscabexyear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PedidoscabexyearResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Pedidoscabexcliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:Pedidoscabexcliente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Pedidoscabexcliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PedidoscabexclienteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="Clientes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Clientes" message="tns:IService1_Clientes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ClientesResponse" message="tns:IService1_Clientes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Paises">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Paises" message="tns:IService1_Paises_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PaisesResponse" message="tns:IService1_Paises_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Pedidoscabexyear">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Pedidoscabexyear" message="tns:IService1_Pedidoscabexyear_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PedidoscabexyearResponse" message="tns:IService1_Pedidoscabexyear_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Pedidoscabexcliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Pedidoscabexcliente" message="tns:IService1_Pedidoscabexcliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PedidoscabexclienteResponse" message="tns:IService1_Pedidoscabexcliente_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Clientes">
+      <soap:operation soapAction="http://tempuri.org/IService1/Clientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Paises">
+      <soap:operation soapAction="http://tempuri.org/IService1/Paises" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pedidoscabexyear">
+      <soap:operation soapAction="http://tempuri.org/IService1/Pedidoscabexyear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pedidoscabexcliente">
+      <soap:operation soapAction="http://tempuri.org/IService1/Pedidoscabexcliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:53549/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

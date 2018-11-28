@@ -1,0 +1,60 @@
+﻿@model IEnumerable<DSW1_ELF_Alave.ReferenciaNegocios.Pedidoscabe>
+
+@{
+    ViewBag.Title = "Pedidoscabexyear";
+}
+
+@using (Html.BeginForm())
+{
+    <span>Ingrese el Año</span>
+    <input type="text" name="y" id="y" value="@ViewBag.y" />
+    <input type="submit" value="Consulta" />
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DireccionDestinatario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaPedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdPedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientepedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.empleadoPedido)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DireccionDestinatario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaPedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.clientepedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.empleadoPedido)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+
+</table>

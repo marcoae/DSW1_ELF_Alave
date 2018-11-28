@@ -1,0 +1,14 @@
+C:\Users\suitebg204\source\repos\DSW1_ELF_Alave\WcfService1\bin\WcfService1.dll.config
+C:\Users\suitebg204\source\repos\DSW1_ELF_Alave\WcfService1\bin\WcfService1.dll
+C:\Users\suitebg204\source\repos\DSW1_ELF_Alave\WcfService1\bin\WcfService1.pdb
+C:\Users\suitebg204\source\repos\DSW1_ELF_Alave\WcfService1\obj\Debug\WcfService1.csprojAssemblyReference.cache
+C:\Users\suitebg204\source\repos\DSW1_ELF_Alave\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache
+C:\Users\suitebg204\source\repos\DSW1_ELF_Alave\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\suitebg204\source\repos\DSW1_ELF_Alave\WcfService1\obj\Debug\WcfService1.pdb
+D:\DSW1_ELF_Alave\DSW1_ELF_Alave\WcfService1\bin\WcfService1.dll.config
+D:\DSW1_ELF_Alave\DSW1_ELF_Alave\WcfService1\bin\WcfService1.dll
+D:\DSW1_ELF_Alave\DSW1_ELF_Alave\WcfService1\bin\WcfService1.pdb
+D:\DSW1_ELF_Alave\DSW1_ELF_Alave\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+D:\DSW1_ELF_Alave\DSW1_ELF_Alave\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache
+D:\DSW1_ELF_Alave\DSW1_ELF_Alave\WcfService1\obj\Debug\WcfService1.dll
+D:\DSW1_ELF_Alave\DSW1_ELF_Alave\WcfService1\obj\Debug\WcfService1.pdb

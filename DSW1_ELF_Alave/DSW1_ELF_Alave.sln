@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSW1_ELF_Alave", "DSW1_ELF_Alave\DSW1_ELF_Alave.csproj", "{8D9D4449-2DB0-4DB2-A431-D3552E2E1A1A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9786A710-103F-46B4-884C-1C5BD7BF07A4} = {9786A710-103F-46B4-884C-1C5BD7BF07A4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "WcfService1\WcfService1.csproj", "{9786A710-103F-46B4-884C-1C5BD7BF07A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D9D4449-2DB0-4DB2-A431-D3552E2E1A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D9D4449-2DB0-4DB2-A431-D3552E2E1A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D9D4449-2DB0-4DB2-A431-D3552E2E1A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D9D4449-2DB0-4DB2-A431-D3552E2E1A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9786A710-103F-46B4-884C-1C5BD7BF07A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9786A710-103F-46B4-884C-1C5BD7BF07A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9786A710-103F-46B4-884C-1C5BD7BF07A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9786A710-103F-46B4-884C-1C5BD7BF07A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB75BC7E-E19C-49F6-9893-D8284DCAFDE7}
+	EndGlobalSection
+EndGlobal
